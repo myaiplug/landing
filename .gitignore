@@ -1,0 +1,36 @@
+node_modules/
+dist/
+.cache/
+*.log
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Capacitor native builds
+android/app/build/
+android/.gradle/
+android/build/
+ios/App/Pods/
+ios/Pods/
+ios/build/
+
+# Tauri
+src-tauri/target/
+
+# Large assets
+Public/
+public/bgg.png
+
+# Python
+__pycache__/
+*.pyc

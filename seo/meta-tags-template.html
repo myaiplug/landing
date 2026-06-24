@@ -1,0 +1,398 @@
+<!-- ============================================
+  Meta Tags Template - MyAiPlug.com
+  Inject into <head> of every page
+  Last updated: 2026-05-21
+  ============================================
+
+  USAGE:
+  1. Copy the entire <head> block below
+  2. Replace {VARIABLES} per page
+  3. Replace PAGE-SPECIFIC JSON-LD with appropriate schema
+  4. Use the per-page quick-reference table at the bottom
+-->
+
+<head>
+  <!-- === CHARSET & VIEWPORT === -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- === TITLE (50-60 chars) === -->
+  <title>{PAGE_TITLE} | MyAiPlug - AI Audio Creation Hub</title>
+
+  <!-- === META DESCRIPTION (150-160 chars) === -->
+  <meta name="description" content="{META_DESCRIPTION}" />
+
+  <!-- === META KEYWORDS === -->
+  <meta name="keywords" content="{KEYWORDS_COMMA_SEPARATED}" />
+
+  <!-- === META ROBOTS === -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- FOR ADMIN PAGES: <meta name="robots" content="noindex, nofollow" /> -->
+
+  <!-- === CANONICAL === -->
+  <link rel="canonical" href="{CANONICAL_URL}" />
+
+  <!-- === HREFLANG === -->
+  <link rel="alternate" href="https://myaiplug.com/" hreflang="x-default" />
+  <link rel="alternate" href="https://myaiplug.com/" hreflang="en" />
+  <link rel="alternate" href="https://myaiplug.com/" hreflang="en-US" />
+
+  <!-- === OPEN GRAPH (Facebook, LinkedIn, Discord, Slack) === -->
+  <meta property="og:type" content="{OG_TYPE}" />
+  <!-- og:type: website for homepage, article for blog, product for product pages -->
+  <meta property="og:title" content="{OG_TITLE}" />
+  <meta property="og:description" content="{OG_DESCRIPTION}" />
+  <meta property="og:url" content="{CANONICAL_URL}" />
+  <meta property="og:site_name" content="MyAiPlug" />
+  <meta property="og:image" content="{OG_IMAGE_URL}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{OG_IMAGE_ALT}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:updated_time" content="{LAST_UPDATED_ISO}" />
+
+  <!-- === TWITTER CARD (X/Twitter) === -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@myaiplug" />
+  <meta name="twitter:creator" content="@myaiplug" />
+  <meta name="twitter:title" content="{TWITTER_TITLE}" />
+  <meta name="twitter:description" content="{TWITTER_DESCRIPTION}" />
+  <meta name="twitter:image" content="{TWITTER_IMAGE_URL}" />
+  <meta name="twitter:image:alt" content="{TWITTER_IMAGE_ALT}" />
+
+  <!-- === ADDITIONAL METADATA === -->
+  <meta name="author" content="MyAiPlug" />
+  <meta name="generator" content="MyAiPlug Platform" />
+  <meta name="application-name" content="MyAiPlug" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- === FAVICON / APP ICONS === -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#0d1117" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <!-- === STRUCTURED DATA (JSON-LD) === -->
+
+  <!-- 1. Organization schema (site-wide, every page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://myaiplug.com/#organization",
+    "name": "MyAiPlug",
+    "alternateName": "Producer Gear",
+    "url": "https://myaiplug.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://myaiplug.com/images/logo.png"
+    },
+    "sameAs": [
+      "https://twitter.com/myaiplug",
+      "https://www.youtube.com/@myaiplug",
+      "https://www.instagram.com/myaiplug",
+      "https://www.tiktok.com/@myaiplug",
+      "https://discord.gg/myaiplug",
+      "https://github.com/myaiplug",
+      "https://www.reddit.com/r/myaiplug"
+    ]
+  }
+  </script>
+
+  <!-- 2. WebSite schema with SearchAction (site-wide, every page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://myaiplug.com/#website",
+    "url": "https://myaiplug.com",
+    "name": "MyAiPlug",
+    "alternateName": "MyAiPlug - AI Audio Creation Hub",
+    "publisher": {
+      "@id": "https://myaiplug.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- 3. BreadcrumbList schema (every page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myaiplug.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{BREADCRUMB_CATEGORY}",
+        "item": "https://myaiplug.com/{BREADCRUMB_CATEGORY_PATH}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{BREADCRUMB_PAGE_NAME}",
+        "item": "{CANONICAL_URL}"
+      }
+    ]
+  }
+  </script>
+
+  <!-- 4. PAGE-SPECIFIC JSON-LD -->
+  <!-- REPLACE THIS BLOCK with the appropriate schema for each page:
+
+    HOMEPAGE:
+      WebPage + CollectionPage schema
+
+    PRODUCT PAGE:
+      Product + Offer schema
+
+    TOOL PAGE:
+      SoftwareApplication schema
+
+    BLOG POST:
+      Article + FAQPage schema
+
+    SERVICE PAGE:
+      Service schema
+  -->
+  {PAGE_SPECIFIC_JSON_LD}
+
+  <!-- === PRELOAD / PREFETCH === -->
+  <link rel="preconnect" href="https://js.stripe.com" />
+  <link rel="dns-prefetch" href="https://js.stripe.com" />
+  <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+  <!-- === STYLESHEET === -->
+  {STYLESHEET_LINKS}
+
+</head>
+
+<!-- ============================================
+  PER-PAGE META REFERENCE
+  ============================================
+
+  === HOMEPAGE ===
+  title: "MyAiPlug - AI Audio Creation Hub | Beats, Tools, & Stems"
+  description: "MyAiPlug is the all-in-one AI audio creation hub. Free online stem separation, ScrewAI audio slow-down, 432 Hz converter, AI prompt packs, beat store platform, and music production tools. Generate, flip, and release your music."
+  keywords: "AI audio tools, stem separation, online stem splitter, ScrewAI, 432 Hz converter, beat selling platform, AI music prompts, music production tools, free audio tools online"
+  og_type: website
+  og_title: "MyAiPlug - AI Audio Creation Hub"
+  og_description: "Free online AI audio tools: stem separation, audio slow-down, 432 Hz conversion. Plus AI prompt packs, beat store platform, and music production resources."
+  og_image: https://myaiplug.com/images/og-home.jpg
+  canonical: https://myaiplug.com/
+
+  === MARKETPLACE ===
+  title: "Marketplace - AI Music Packs & Production Tools | MyAiPlug"
+  description: "Browse AI music generation prompt packs, hook vaults, beat-making kits, mastering chains, and producer tools. Download instant digital products for music production."
+  keywords: "AI music packs, prompt packs, hook vaults, beat kits, music production downloads, AI music marketplace, producer tools"
+  og_type: website
+  og_title: "Marketplace - MyAiPlug"
+  og_description: "Download AI music packs, prompt recipes, hook vaults, mastering chains, and producer business tools. Instant digital delivery."
+  og_image: https://myaiplug.com/images/og-marketplace.jpg
+  canonical: https://myaiplug.com/marketplace
+
+  === STEMSPLIT TOOL ===
+  title: "Free Online AI Stem Splitter - Separate Vocals & Instruments | MyAiPlug"
+  description: "Separate vocals, drums, bass, and other instruments from any audio file free online. AI-powered stem separation with 2/4/5 stem modes. No installation required. Try StemSplit now."
+  keywords: "free stem splitter online, AI stem separation, vocal isolation tool, separate vocals from music, drum extraction, acapella maker, online audio splitter"
+  og_type: website
+  og_title: "Free Online AI Stem Splitter - MyAiPlug StemSplit"
+  og_description: "Extract vocals, drums, bass from any song with AI. Free online stem separation tool. 2/4/5 stem modes. No download needed."
+  og_image: https://myaiplug.com/images/og-stemsplit.jpg
+  canonical: https://myaiplug.com/stemsplit
+
+  === SCREWAI TOOL ===
+  title: "ScrewAI - Free Online Audio Slow Down & Half-Time Effect | MyAiPlug"
+  description: "Slow down audio online with ScrewAI. Free half-time effect, tape slowdown, and chopped-and-screwed style processing. Studio-grade FX chains included. Try it free."
+  keywords: "ScrewAI, audio slow down, half-time effect, chopped and screwed online, screw music generator, tape slowdown effect, free audio tool"
+  og_type: website
+  og_title: "ScrewAI - Free Online Audio Slow Down Effect | MyAiPlug"
+  og_description: "Turn any track into a chopped-and-screwed masterpiece. Free online half-time audio processor with studio-grade presets."
+  og_image: https://myaiplug.com/images/og-screwai.jpg
+  canonical: https://myaiplug.com/screwai
+
+  === RETUNE432 TOOL ===
+  title: "Free Online 432 Hz Audio Converter - reTUNE432 | MyAiPlug"
+  description: "Convert any audio file to 432 Hz frequency free online. Drag-and-drop 432 Hz converter with batch processing. Retune your music to the healing frequency instantly."
+  keywords: "432 Hz converter, online frequency converter, 432 Hz music, audio tuning tool, free frequency converter, 432 Hz retune"
+  og_type: website
+  og_title: "Free Online 432 Hz Converter - reTUNE432 | MyAiPlug"
+  og_description: "Convert music to 432 Hz online free. Drag-and-drop audio frequency converter. Batch processing supported."
+  og_image: https://myaiplug.com/images/og-retune432.jpg
+  canonical: https://myaiplug.com/retune432
+
+  === BEATSTORE PLAYER ===
+  title: "BeatStore Player - Sell Beats Online | MyAiPlug"
+  description: "Sell beats online with BeatStore Player. Embeddable beat selling platform with Stripe payments, track analytics, and MPC pattern designer. Start selling your beats in minutes."
+  keywords: "sell beats online, beat selling platform, beat store website, sell beats without coding, music producer e-commerce, beatStars alternative"
+  og_type: website
+  og_title: "BeatStore Player - Sell Beats Online Platform | MyAiPlug"
+  og_description: "Embeddable beat selling platform for music producers. Stripe integration, analytics, MPC pattern designer. Start selling beats online today."
+  og_image: https://myaiplug.com/images/og-beatstore.jpg
+  canonical: https://myaiplug.com/services/beat-store
+
+  === BLOG POST ===
+  title: "{Blog Post Title} | MyAiPlug Blog"
+  description: "{150-160 char blog description with target keyword}"
+  keywords: "{blog-specific keywords}"
+  og_type: article
+  og_title: "{Blog Post Title} | MyAiPlug Blog"
+  og_description: "{blog description}"
+  og_image: https://myaiplug.com/images/blog/{slug}.jpg
+  canonical: https://myaiplug.com/blog/{slug}
+
+  === PRODUCT PAGE ===
+  title: "{Product Name} - {Category} | MyAiPlug Marketplace"
+  description: "{Product-specific 150-160 char description}"
+  keywords: "{product-specific keywords}"
+  og_type: product
+  og_title: "{Product Name} | MyAiPlug"
+  og_description: "{product description}"
+  og_image: https://myaiplug.com/images/products/{product-id}.jpg
+  canonical: https://myaiplug.com/product/{product-id}
+
+  === CATEGORY PAGE ===
+  title: "{Category Name} - Browse Products | MyAiPlug Marketplace"
+  description: "Browse {category name} products at MyAiPlug. {Category-specific description}"
+  keywords: "{category keywords}"
+  og_type: website
+  canonical: https://myaiplug.com/category/{category-slug}
+
+  === OPENDAW ===
+  title: "openDAW - Browser-Based DAW | MyAiPlug"
+  description: "openDAW is a free browser-based digital audio workstation for music production. Access AI audio tools, stem separation, and effects directly in your browser."
+  keywords: "online DAW, browser DAW, free DAW, web audio workstation, online music production"
+  og_type: website
+  og_title: "openDAW - Browser-Based DAW | MyAiPlug"
+  canonical: https://myaiplug.com/openDAW
+
+  === LEGAL PAGES ===
+  title: "{License | Terms | Privacy} | MyAiPlug"
+  description: "MyAiPlug {license | terms of service | privacy policy}. Understand your rights and obligations when using MyAiPlug products and services."
+  robots: "index, follow" (if useful) or "noindex, follow" (if thin)
+  canonical: https://myaiplug.com/{page}
+-->
+
+<!-- ============================================
+  PAGE-SPECIFIC JSON-LD BLUEPRINTS
+  ============================================
+
+  --- HOMEPAGE COLLECTION PAGE ---
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://myaiplug.com/#homepage",
+    "url": "https://myaiplug.com/",
+    "name": "MyAiPlug - AI Audio Creation Hub",
+    "description": "All-in-one AI audio creation hub.",
+    "about": {
+      "@type": "Thing",
+      "name": "AI Audio Processing and Music Production Tools"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "SoftwareApplication", "name": "StemSplit", "url": "https://myaiplug.com/stemsplit"},
+        {"@type": "SoftwareApplication", "name": "ScrewAI", "url": "https://myaiplug.com/screwai"},
+        {"@type": "SoftwareApplication", "name": "reTUNE432", "url": "https://myaiplug.com/retune432"}
+      ]
+    }
+  }
+
+  --- TOOL PAGE (SoftwareApplication) ---
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://myaiplug.com/{tool}#software",
+    "name": "{Tool Name}",
+    "url": "https://myaiplug.com/{tool}",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "Requires modern browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "{0 or price}",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": ["Feature 1", "Feature 2", "Feature 3"]
+  }
+
+  --- PRODUCT PAGE (Product + Offer) ---
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://myaiplug.com/product/{id}#product",
+    "name": "{Product Name}",
+    "url": "https://myaiplug.com/product/{id}",
+    "description": "{description}",
+    "category": "{category}",
+    "offers": {
+      "@type": "Offer",
+      "price": {price},
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://myaiplug.com/product/{id}"
+    }
+  }
+
+  --- BLOG POST (Article + FAQPage) ---
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://myaiplug.com/blog/{slug}#article",
+    "headline": "{Headline}",
+    "description": "{description}",
+    "datePublished": "{2026-05-21}",
+    "dateModified": "{2026-05-21}",
+    "author": {
+      "@type": "Person",
+      "name": "MyAiPlug Team"
+    },
+    "publisher": {
+      "@id": "https://myaiplug.com/#organization"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://myaiplug.com/blog/{slug}"
+    },
+    "image": "https://myaiplug.com/images/blog/{slug}.jpg"
+  }
+
+  --- SERVICE PAGE ---
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://myaiplug.com/services/{service}#service",
+    "name": "{Service Name}",
+    "url": "https://myaiplug.com/services/{service}",
+    "description": "{description}",
+    "provider": {
+      "@id": "https://myaiplug.com/#organization"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": {price},
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+-->

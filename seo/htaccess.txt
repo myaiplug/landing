@@ -1,0 +1,290 @@
+# ============================================
+# .htaccess - MyAiPlug.com
+# Server: Apache 2.4+
+# Last updated: 2026-05-21
+# ============================================
+
+# ============================================
+# ACTIVATE REWRITE ENGINE
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+</IfModule>
+
+# ============================================
+# HTTPS ENFORCEMENT
+# ============================================
+<IfModule mod_rewrite.c>
+  # Redirect HTTP to HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Redirect www to non-www
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # Remove trailing slash from non-directory URLs
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+</IfModule>
+
+# ============================================
+# 301 REDIRECTS (Canonical URLs)
+# ============================================
+<IfModule mod_rewrite.c>
+  # Homepage variants
+  RewriteRule ^index\.html$ https://myaiplug.com/ [R=301,L]
+
+  # Legacy / alternate paths
+  RewriteRule ^shop$ https://myaiplug.com/marketplace [R=301,L]
+  RewriteRule ^store$ https://myaiplug.com/marketplace [R=301,L]
+  RewriteRule ^products$ https://myaiplug.com/marketplace [R=301,L]
+  RewriteRule ^apps$ https://myaiplug.com/tools [R=301,L]
+
+  # Tool aliases
+  RewriteRule ^stemsplitter$ https://myaiplug.com/stemsplit [R=301,L]
+  RewriteRule ^stem-splitter$ https://myaiplug.com/stemsplit [R=301,L]
+  RewriteRule ^stem-separation$ https://myaiplug.com/stemsplit [R=301,L]
+  RewriteRule ^vocal-isolation$ https://myaiplug.com/stemsplit [R=301,L]
+  RewriteRule ^split-audio$ https://myaiplug.com/stemsplit [R=301,L]
+  RewriteRule ^screw$ https://myaiplug.com/screwai [R=301,L]
+  RewriteRule ^half-time$ https://myaiplug.com/screwai [R=301,L]
+  RewriteRule ^audio-slow-down$ https://myaiplug.com/screwai [R=301,L]
+  RewriteRule ^screw-effect$ https://myaiplug.com/screwai [R=301,L]
+  RewriteRule ^432hz$ https://myaiplug.com/retune432 [R=301,L]
+  RewriteRule ^432-converter$ https://myaiplug.com/retune432 [R=301,L]
+  RewriteRule ^frequency-converter$ https://myaiplug.com/retune432 [R=301,L]
+  RewriteRule ^retune$ https://myaiplug.com/retune432 [R=301,L]
+
+  # Service aliases
+  RewriteRule ^custom-hook$ https://myaiplug.com/services/custom-hook [R=301,L]
+
+  # Anchor hash redirects (via query param workaround)
+  RewriteRule ^#market$ https://myaiplug.com/marketplace [R=301,L]
+  RewriteRule ^#tools$ https://myaiplug.com/tools [R=301,L]
+</IfModule>
+
+# ============================================
+# CANONICAL HEADERS
+# ============================================
+<IfModule mod_rewrite.c>
+  # Add canonical link header for homepage
+  RewriteRule ^$ - [E=CANONICAL:https://myaiplug.com/]
+  Header set Link '<%{CANONICAL}e>; rel="canonical"' env=CANONICAL
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Dynamic canonical via environment variable pattern
+  # This is handled via <link> tag in HTML head instead
+</IfModule>
+
+# ============================================
+# CACHE HEADERS FOR STATIC ASSETS
+# ============================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Default: 1 month
+  ExpiresDefault "access plus 1 month"
+
+  # HTML: 1 hour (revalidate frequently)
+  ExpiresByType text/html "access plus 1 hour"
+
+  # CSS/JS: 1 year (fingerprinted)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Images: 1 year
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts: 1 year
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # Audio: 1 month
+  ExpiresByType audio/mpeg "access plus 1 month"
+  ExpiresByType audio/wav "access plus 1 month"
+  ExpiresByType audio/ogg "access plus 1 month"
+
+  # PDF/Docs: 1 week
+  ExpiresByType application/pdf "access plus 1 week"
+  ExpiresByType application/json "access plus 1 week"
+
+  # Data: 1 hour
+  ExpiresByType application/json "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cache-Control overrides
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=3600, public, must-revalidate"
+  </FilesMatch>
+
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(mp3|wav|ogg|flac)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+
+  <FilesMatch "\.(pdf)$">
+    Header set Cache-Control "max-age=604800, public, must-revalidate"
+  </FilesMatch>
+
+  # Remove ETags for static assets (use Cache-Control instead)
+  <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|woff|woff2)$">
+    FileETag None
+    Header unset ETag
+  </FilesMatch>
+</IfModule>
+
+# ============================================
+# GZIP COMPRESSION
+# ============================================
+<IfModule mod_deflate.c>
+  # Enable compression
+  SetOutputFilter DEFLATE
+
+  # Compress text-based content
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+
+  # Don't compress already-compressed content
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp|mp3|wav|ogg|flac|zip|gz)$ no-gzip dont-vary
+
+  # Remove browser bugs
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+  <IfModule mod_headers.c>
+    Header append Vary User-Agent
+  </IfModule>
+</IfModule>
+
+# ============================================
+# SECURITY HEADERS
+# ============================================
+<IfModule mod_headers.c>
+  # HSTS (HTTP Strict Transport Security)
+  # Uncomment when SSL is fully configured:
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # X-Content-Type-Options (prevents MIME sniffing)
+  Header always set X-Content-Type-Options "nosniff"
+
+  # X-Frame-Options (prevents clickjacking)
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Referrer-Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions-Policy (controls browser features)
+  Header always set Permissions-Policy "geolocation=(), microphone=(self), camera=(), payment=(self)"
+
+  # Content-Security-Policy
+  # Adjust as needed for third-party scripts (Stripe, analytics)
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://js.stripe.com https://*.stripe.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://placehold.co data:; font-src 'self'; connect-src 'self' https://api.stripe.com; frame-src https://js.stripe.com https://hooks.stripe.com; media-src 'self' data: blob:;"
+
+  # X-XSS-Protection (legacy browsers)
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Remove server signature
+  ServerSignature Off
+  Header unset X-Powered-By
+</IfModule>
+
+# ============================================
+# CROSS-ORIGIN RESOURCE SHARING (CORS)
+# ============================================
+<IfModule mod_headers.c>
+  # Allow API access from halfscrew.com
+  SetEnvIf Origin "^https://halfscrew\.com$" IS_CORS
+  Header always set Access-Control-Allow-Origin "https://halfscrew.com" env=IS_CORS
+  Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS" env=IS_CORS
+  Header always set Access-Control-Allow-Headers "Content-Type, X-API-Key" env=IS_CORS
+  Header always set Access-Control-Allow-Credentials "true" env=IS_CORS
+
+  # CORS preflight
+  RewriteCond %{REQUEST_METHOD} OPTIONS
+  RewriteRule ^(.*)$ $1 [R=200,L]
+</IfModule>
+
+# ============================================
+# FILE ACCESS PROTECTION
+# ============================================
+# Deny access to hidden files
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Protect sensitive files
+<FilesMatch "\.(env|json|lock|log|yml|yaml|md|gitignore)$">
+  Require all denied
+</FilesMatch>
+
+# Protect config files
+<FilesMatch "(composer\.json|package\.json|webpack\.config|vite\.config)">
+  Require all denied
+</FilesMatch>
+
+# Allow products.json for app functionality
+<Files "products.json">
+  Require all granted
+</Files>
+
+# ============================================
+# DIRECTORY INDEX
+# ============================================
+DirectoryIndex index.html
+
+# ============================================
+# ERROR PAGES
+# ============================================
+ErrorDocument 400 /errors/400.html
+ErrorDocument 401 /errors/401.html
+ErrorDocument 403 /errors/403.html
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 /errors/500.html
+ErrorDocument 502 /errors/502.html
+ErrorDocument 503 /errors/503.html
+
+# ============================================
+# CHARSET
+# ============================================
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .json .xml .svg
+
+# ============================================
+# PERFORMANCE: KEEP-ALIVE
+# ============================================
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+</IfModule>
+
+# ============================================
+# CUSTOM LOGGING
+# ============================================
+# LogFormat for SEO analysis
+# LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" seo
+# CustomLog logs/seo-access.log seo

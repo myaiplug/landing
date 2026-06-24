@@ -1,0 +1,529 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://myaiplug.com/#stemsplit",
+      "name": "StemSplit - AI Stem Separator",
+      "url": "https://myaiplug.com/stemsplit",
+      "description": "Free AI-powered online stem separation tool. Extract vocals, drums, bass, and other instruments from any audio file in seconds. Supports 2-stem, 4-stem, and 5-stem separation with high-quality AI models. No installation required.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires modern browser with WebAssembly support",
+      "offers": {
+        "@type": "Offer",
+        "name": "StemSplit Credits - 100",
+        "price": 15.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/stemsplit-credits-100",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "bestRating": "5",
+        "ratingCount": "128",
+        "reviewCount": "93"
+      },
+      "featureList": [
+        "AI vocal extraction",
+        "Drum stem separation",
+        "Bass track isolation",
+        "Multi-stem (2/4/5) modes",
+        "Cloud processing",
+        "Priority queue with credits"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://myaiplug.com/#screwai",
+      "name": "ScrewAI - Half-Time Audio Slow Down Effect",
+      "url": "https://myaiplug.com/screwai",
+      "description": "Online audio slow-down tool inspired by the chopped and screwed style. Apply half-time, tape slowdown, and 432 Hz retune effects to any audio. Free web-based audio processing with studio-grade FX chains.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires modern browser",
+      "offers": {
+        "@type": "Offer",
+        "name": "ScrewAI Presets & FX Chains Vol.1",
+        "price": 24.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/screwai-presets-vol1",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "featureList": [
+        "Half-time audio effect",
+        "Tape slow down simulation",
+        "432 Hz retune mode",
+        "15 studio-grade FX chain presets",
+        "Cross-DAW preset compatibility"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://myaiplug.com/#retune432",
+      "name": "reTUNE432 - Online 432 Hz Audio Converter",
+      "url": "https://myaiplug.com/retune432",
+      "description": "Free online audio converter that retunes music to 432 Hz. Drag-and-drop interface with batch processing support. Convert any audio file to the healing frequency of 432 Hz instantly in your browser.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires modern browser",
+      "offers": {
+        "@type": "Offer",
+        "name": "reTUNE432 Web Tool",
+        "price": 0,
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://myaiplug.com/retune432",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "featureList": [
+        "Free online 432 Hz conversion",
+        "Drag-and-drop interface",
+        "Batch processing mode",
+        "Real-time preview (coming soon)"
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#prompt-pack-vol1",
+      "name": "Ultimate Prompt Pack Vol.1",
+      "url": "https://myaiplug.com/product/prompt-pack-vol1",
+      "description": "200+ genre and artist-feel AI prompt recipes for music generation tools like Suno, Udio, and MusicGen. Includes weighted macros, multi-step prompting systems, and resell-friendly license add-on.",
+      "category": "AI Music Generation Tools",
+      "offers": {
+        "@type": "Offer",
+        "price": 29.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/prompt-pack-vol1",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#workflow-mastery-kit",
+      "name": "Music Creation Workflow Mastery",
+      "url": "https://myaiplug.com/product/workflow-mastery-kit",
+      "description": "Complete A-Z music creation workflow guide for modern producers. Includes artist workflow templates, creative scheduling checklists, and time management systems optimized for AI-assisted music production.",
+      "category": "Music Production Education",
+      "offers": {
+        "@type": "Offer",
+        "price": 49.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/workflow-mastery-kit",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#prompt-engineering-master-pack",
+      "name": "AI Prompt Engineering for Musicians",
+      "url": "https://myaiplug.com/product/prompt-engineering-master-pack",
+      "description": "Advanced prompt engineering techniques specifically for AI music tools. Includes 50+ working examples for Suno, Udio, MusicGen, and other generative audio platforms. Master iterative refinement strategies.",
+      "category": "AI Music Generation Education",
+      "offers": {
+        "@type": "Offer",
+        "price": 39.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/prompt-engineering-master-pack",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#producer-business-toolkit",
+      "name": "Producer Business & Marketing Toolkit",
+      "url": "https://myaiplug.com/product/producer-business-toolkit",
+      "description": "Complete business toolkit for music producers. Includes contract templates, pricing guides, social media marketing strategies, streaming optimization plans, and revenue stream optimization templates.",
+      "category": "Music Business Resources",
+      "offers": {
+        "@type": "Offer",
+        "price": 59.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/producer-business-toolkit",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#creative-process-blueprint",
+      "name": "Creative Process Blueprint & Systems",
+      "url": "https://myaiplug.com/product/creative-process-blueprint",
+      "description": "Structured creative ideation methods and beat-making decision trees for music producers. Overcome creative block with proven inspiration capture and organization systems.",
+      "category": "Music Production Resources",
+      "offers": {
+        "@type": "Offer",
+        "price": 29.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/creative-process-blueprint",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#sample-clearance-guide",
+      "name": "Sample Clearance & Copyright Guide",
+      "url": "https://myaiplug.com/product/sample-clearance-guide",
+      "description": "Complete sample clearance process walkthrough and copyright guide for music producers. Includes legal template letters, forms, and licensing best practices.",
+      "category": "Music Legal Resources",
+      "offers": {
+        "@type": "Offer",
+        "price": 19.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/sample-clearance-guide",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#streaming-optimization-kit",
+      "name": "Streaming Platform Optimization Kit",
+      "url": "https://myaiplug.com/product/streaming-optimization-kit",
+      "description": "Optimize your music for Spotify, Apple Music, and other streaming platforms. Includes algorithm guides, playlist pitching templates, release timing strategies, and metadata optimization checklists.",
+      "category": "Music Distribution Resources",
+      "offers": {
+        "@type": "Offer",
+        "price": 24.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/streaming-optimization-kit",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#beatstore-player-basic",
+      "name": "BeatStore Player - Basic",
+      "url": "https://myaiplug.com/product/beatstore-player-basic",
+      "description": "Embeddable beat player for music producer websites. Includes 25 track uploads per month, Stripe payment integration, basic sales analytics, and tracking tools. Start selling beats online instantly.",
+      "category": "Beat Selling Platform",
+      "offers": {
+        "@type": "Offer",
+        "price": 19.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/beatstore-player-basic",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#beatstore-player-pro",
+      "name": "BeatStore Player - Pro",
+      "url": "https://myaiplug.com/product/beatstore-player-pro",
+      "description": "Professional beat selling platform with MPC pattern designer, 100 track uploads, stems and hooks support, advanced analytics, auto-metadata tagging, and duplicate checker tools.",
+      "category": "Beat Selling Platform",
+      "offers": {
+        "@type": "Offer",
+        "price": 39.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/beatstore-player-pro",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#beatstore-player-vip",
+      "name": "BeatStore Player - VIP",
+      "url": "https://myaiplug.com/product/beatstore-player-vip",
+      "description": "Premium beat selling platform with unlimited uploads, TheBeatMob sound library access, white-label customization, bulk producer tagger, and priority support.",
+      "category": "Beat Selling Platform",
+      "offers": {
+        "@type": "Offer",
+        "price": 79.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/beatstore-player-vip",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#hook-vault-vol1",
+      "name": "Hook Vault Vol.1 - 50 AI Hooks",
+      "url": "https://myaiplug.com/product/hook-vault-vol1",
+      "description": "50 professionally produced AI-generated vocal hooks in wet and dry versions. Includes key and BPM metadata for each hook. Stem-ready WAV and MP3 formats for instant use in any DAW.",
+      "category": "AI Music Samples",
+      "offers": {
+        "@type": "Offer",
+        "price": 29.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/hook-vault-vol1",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#one-shot-kit-808-lab",
+      "name": "808 Lab - Drum & One-Shots Kit",
+      "url": "https://myaiplug.com/product/one-shot-kit-808-lab",
+      "description": "120 professional one-shot drum samples including kicks, snares, hi-hats, and percussion. Includes 20 MIDI starter grooves. Sampler-ready with genre tagging for instant beat production.",
+      "category": "Drum Samples",
+      "offers": {
+        "@type": "Offer",
+        "price": 19.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/one-shot-kit-808-lab",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#mastering-chains-vol1",
+      "name": "Mastering Chains - Loud & Clean",
+      "url": "https://myaiplug.com/product/mastering-chains-vol1",
+      "description": "5 professional mastering templates for EDM, Hip-Hop, Trap, Pop, and Alternative genres. Includes target LUFS levels, streaming platform specifications, and clip-safe mastering chains.",
+      "category": "Audio Mastering Tools",
+      "offers": {
+        "@type": "Offer",
+        "price": 39.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/mastering-chains-vol1",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#release-kit-vol1",
+      "name": "Release Kit - Cover Art + Metadata",
+      "url": "https://myaiplug.com/product/release-kit-vol1",
+      "description": "Auto-ready cover art templates for all social media sizes. Includes PSD and PNG formats, metadata cheat sheet for ISRC/UPC codes, and print-ready retina resolution files.",
+      "category": "Music Release Tools",
+      "offers": {
+        "@type": "Offer",
+        "price": 29.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/release-kit-vol1",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://myaiplug.com/#vip-membership",
+      "name": "VIP Tier Monthly Membership",
+      "url": "https://myaiplug.com/product/vip-membership",
+      "description": "Monthly VIP membership for MyAiPlug. Includes all Pro packs, monthly exclusive content drops, priority support, tool credits, and Discord community access.",
+      "category": "Music Production Subscription",
+      "offers": {
+        "@type": "Offer",
+        "price": 9.99,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/product/vip-membership",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        },
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 9.99,
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "MyAiPlug"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://myaiplug.com/#custom-hook-service",
+      "name": "Custom Hook / Topline Service (24-48h)",
+      "url": "https://myaiplug.com/services/custom-hook",
+      "description": "Professional custom hook and topline recording service with 24-48 hour turnaround. Includes one revision, rough master with stems provided, and rush add-on option.",
+      "serviceType": "Music Production Service",
+      "provider": {
+        "@type": "Organization",
+        "name": "MyAiPlug",
+        "url": "https://myaiplug.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": 149.00,
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "https://myaiplug.com/services/custom-hook",
+        "seller": {
+          "@type": "Organization",
+          "name": "MyAiPlug",
+          "url": "https://myaiplug.com"
+        }
+      }
+    }
+  ]
+}

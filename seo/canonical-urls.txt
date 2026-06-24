@@ -1,0 +1,114 @@
+# ============================================
+# Canonical URLs for myaiplug.com
+# Last updated: 2026-05-21
+# ============================================
+# Format:
+#   <actual-url> -> <canonical-url>
+#
+# Use these in <link rel="canonical" href="..."> tags
+# and in 301 redirect rules (.htaccess / nginx)
+# ============================================
+
+# === HOMEPAGE ===
+https://myaiplug.com/                    -> https://myaiplug.com/
+https://myaiplug.com/index.html          -> https://myaiplug.com/
+https://www.myaiplug.com/                -> https://myaiplug.com/
+http://myaiplug.com/                     -> https://myaiplug.com/
+http://www.myaiplug.com/                 -> https://myaiplug.com/
+
+# === MARKETPLACE ===
+https://myaiplug.com/marketplace         -> https://myaiplug.com/marketplace
+https://myaiplug.com/#market             -> https://myaiplug.com/marketplace
+https://myaiplug.com/shop                -> https://myaiplug.com/marketplace
+https://myaiplug.com/store               -> https://myaiplug.com/marketplace
+https://myaiplug.com/products            -> https://myaiplug.com/marketplace
+
+# === TOOLS HUB ===
+https://myaiplug.com/tools               -> https://myaiplug.com/tools
+https://myaiplug.com/#tools              -> https://myaiplug.com/tools
+https://myaiplug.com/apps                -> https://myaiplug.com/tools
+
+# === PRODUCT PAGES ===
+https://myaiplug.com/product/prompt-pack-vol1               -> https://myaiplug.com/product/prompt-pack-vol1
+https://myaiplug.com/product/workflow-mastery-kit           -> https://myaiplug.com/product/workflow-mastery-kit
+https://myaiplug.com/product/prompt-engineering-master-pack -> https://myaiplug.com/product/prompt-engineering-master-pack
+https://myaiplug.com/product/producer-business-toolkit      -> https://myaiplug.com/product/producer-business-toolkit
+https://myaiplug.com/product/creative-process-blueprint     -> https://myaiplug.com/product/creative-process-blueprint
+https://myaiplug.com/product/sample-clearance-guide         -> https://myaiplug.com/product/sample-clearance-guide
+https://myaiplug.com/product/streaming-optimization-kit     -> https://myaiplug.com/product/streaming-optimization-kit
+https://myaiplug.com/product/beatstore-player-basic         -> https://myaiplug.com/product/beatstore-player-basic
+https://myaiplug.com/product/beatstore-player-pro           -> https://myaiplug.com/product/beatstore-player-pro
+https://myaiplug.com/product/beatstore-player-vip           -> https://myaiplug.com/product/beatstore-player-vip
+https://myaiplug.com/product/hook-vault-vol1                -> https://myaiplug.com/product/hook-vault-vol1
+https://myaiplug.com/product/one-shot-kit-808-lab           -> https://myaiplug.com/product/one-shot-kit-808-lab
+https://myaiplug.com/product/stemsplit-credits-100          -> https://myaiplug.com/product/stemsplit-credits-100
+https://myaiplug.com/product/screwai-presets-vol1           -> https://myaiplug.com/product/screwai-presets-vol1
+https://myaiplug.com/product/retune432-tool                 -> https://myaiplug.com/product/retune432-tool
+https://myaiplug.com/product/mastering-chains-vol1          -> https://myaiplug.com/product/mastering-chains-vol1
+https://myaiplug.com/product/release-kit-vol1               -> https://myaiplug.com/product/release-kit-vol1
+https://myaiplug.com/product/vip-membership                 -> https://myaiplug.com/product/vip-membership
+https://myaiplug.com/product/custom-hook-service            -> https://myaiplug.com/product/custom-hook-service
+
+# === TOOL PAGES ===
+https://myaiplug.com/stemsplit           -> https://myaiplug.com/stemsplit
+https://myaiplug.com/stemsplitter        -> https://myaiplug.com/stemsplit
+https://myaiplug.com/stem-splitter       -> https://myaiplug.com/stemsplit
+https://myaiplug.com/stem-separation     -> https://myaiplug.com/stemsplit
+https://myaiplug.com/vocal-isolation     -> https://myaiplug.com/stemsplit
+https://myaiplug.com/split-audio         -> https://myaiplug.com/stemsplit
+
+https://myaiplug.com/screwai             -> https://myaiplug.com/screwai
+https://myaiplug.com/screw               -> https://myaiplug.com/screwai
+https://myaiplug.com/half-time           -> https://myaiplug.com/screwai
+https://myaiplug.com/audio-slow-down     -> https://myaiplug.com/screwai
+https://myaiplug.com/screw-effect        -> https://myaiplug.com/screwai
+
+https://myaiplug.com/retune432           -> https://myaiplug.com/retune432
+https://myaiplug.com/432hz               -> https://myaiplug.com/retune432
+https://myaiplug.com/432-converter       -> https://myaiplug.com/retune432
+https://myaiplug.com/frequency-converter -> https://myaiplug.com/retune432
+https://myaiplug.com/retune              -> https://myaiplug.com/retune432
+
+https://myaiplug.com/halfscrew           -> https://myaiplug.com/halfscrew
+https://myaiplug.com/openDAW             -> https://myaiplug.com/openDAW
+
+# === SERVICE PAGES ===
+https://myaiplug.com/services/custom-hook      -> https://myaiplug.com/services/custom-hook
+https://myaiplug.com/services/mastering        -> https://myaiplug.com/services/mastering
+https://myaiplug.com/services/beat-store       -> https://myaiplug.com/services/beat-store
+https://myaiplug.com/custom-hook               -> https://myaiplug.com/services/custom-hook
+
+# === CATEGORY PAGES ===
+https://myaiplug.com/category/generate         -> https://myaiplug.com/category/generate
+https://myaiplug.com/category/flip-process     -> https://myaiplug.com/category/flip-process
+https://myaiplug.com/category/finish-release   -> https://myaiplug.com/category/finish-release
+https://myaiplug.com/category/knowledge        -> https://myaiplug.com/category/knowledge
+https://myaiplug.com/category/membership       -> https://myaiplug.com/category/membership
+
+# === BLOG ===
+https://myaiplug.com/blog                      -> https://myaiplug.com/blog
+https://myaiplug.com/blog/ai-audio-processing-tools-guide   -> https://myaiplug.com/blog/ai-audio-processing-tools-guide
+https://myaiplug.com/blog/best-ai-stem-splitter            -> https://myaiplug.com/blog/best-ai-stem-splitter
+https://myaiplug.com/blog/how-to-slow-down-audio-screw-style -> https://myaiplug.com/blog/how-to-slow-down-audio-screw-style
+https://myaiplug.com/blog/432hz-audio-converter-guide      -> https://myaiplug.com/blog/432hz-audio-converter-guide
+
+# === ADMIN / INTERNAL (NOINDEX) ===
+https://myaiplug.com/admin-hub              -> (NOINDEX, NOFOLLOW)
+https://myaiplug.com/admin                  -> (NOINDEX, NOFOLLOW)
+https://myaiplug.com/api                    -> (NOINDEX, NOFOLLOW)
+
+# === LEGAL ===
+https://myaiplug.com/license                -> https://myaiplug.com/license
+https://myaiplug.com/terms                  -> https://myaiplug.com/terms
+https://myaiplug.com/privacy                -> https://myaiplug.com/privacy
+
+# === SUBDOMAIN (halfscrew.com) ===
+# These routes on myaiplug.com canonical to halfscrew.com
+https://myaiplug.com/halfscrew/             -> https://halfscrew.com/
+https://myaiplug.com/halfscrew/*            -> https://halfscrew.com/ (for core app pages)
+
+# === DUPLICATE/ALTERNATE URLS ===
+https://myaiplug.com/?utm_source=*          -> https://myaiplug.com/
+https://myaiplug.com/landing                -> https://myaiplug.com/
+https://myaiplug.com/home                   -> https://myaiplug.com/
+https://myaiplug.com/default                -> https://myaiplug.com/

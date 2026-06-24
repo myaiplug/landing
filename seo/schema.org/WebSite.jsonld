@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://myaiplug.com/#website",
+  "url": "https://myaiplug.com",
+  "name": "MyAiPlug - AI Audio Creation Hub",
+  "alternateName": "MyAiPlug",
+  "description": "All-in-one AI audio creation hub. Free online stem separation, audio slow-down effects, 432 Hz converter, AI prompt packs, beat store platform, and music production tools for modern producers.",
+  "inLanguage": "en-US",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://myaiplug.com/#organization",
+    "name": "MyAiPlug",
+    "url": "https://myaiplug.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://myaiplug.com/images/logo.png"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "AI Audio Processing and Music Production"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": ["Music Producers", "Beat Makers", "Audio Engineers", "Sound Designers", "Content Creators"]
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/marketplace?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string",
+      "name": "Search Marketplace"
+    },
+    {
+      "@type": "ViewAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/tools"
+      },
+      "name": "View Tools"
+    },
+    {
+      "@type": "UseAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/stemsplit"
+      },
+      "name": "Use StemSplit"
+    },
+    {
+      "@type": "UseAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/screwai"
+      },
+      "name": "Use ScrewAI"
+    },
+    {
+      "@type": "UseAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://myaiplug.com/retune432"
+      },
+      "name": "Use reTUNE432"
+    }
+  ],
+  "mainEntity": {
+    "@type": "WebPage",
+    "@id": "https://myaiplug.com/",
+    "name": "MyAiPlug Homepage",
+    "description": "All-in-one AI audio creation hub. Generate beats, split stems, slow audio, retune to 432 Hz, master tracks, and sell beats online."
+  },
+  "isAccessibleForFree": true,
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "name": "AI Stem Splitter Tool",
+      "url": "https://myaiplug.com/stemsplit"
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "ScrewAI Audio Slow Down",
+      "url": "https://myaiplug.com/screwai"
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "reTUNE432 Converter",
+      "url": "https://myaiplug.com/retune432"
+    },
+    {
+      "@type": "WebPageElement",
+      "name": "BeatStore Player",
+      "url": "https://myaiplug.com/services/beat-store"
+    }
+  ],
+  "specialty": ["AI Audio Processing", "Music Production Software", "Online Audio Tools"],
+  "keywords": [
+    "AI stem separation",
+    "online audio splitter",
+    "free stem separator",
+    "ScrewAI half-time effect",
+    "432 Hz converter",
+    "audio slow down tool",
+    "beat selling platform",
+    "AI music prompts",
+    "music production tools",
+    "AI audio processing"
+  ]
+}

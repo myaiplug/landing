@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MyAiPlug</string>
+    <string name="title_activity_main">MyAiPlug</string>
+    <string name="package_name">com.myaipug.app</string>
+    <string name="custom_url_scheme">com.myaipug.app</string>
+</resources>

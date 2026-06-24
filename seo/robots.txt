@@ -1,0 +1,115 @@
+# ============================================
+# robots.txt - MyAiPlug.com
+# Last updated: 2026-05-21
+# ============================================
+
+# Allow all well-behaved crawlers full access
+User-agent: *
+Allow: /
+
+# Disallow admin / internal paths
+Disallow: /admin-hub
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.env$
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
+# Sitemaps
+Sitemap: https://myaiplug.com/seo/sitemap.xml
+Sitemap: https://halfscrew.com/sitemap.xml
+
+# Crawl rate limiting
+Crawl-delay: 10
+Request-rate: 1/5
+
+# ============================================
+# User-agent: specific crawlers
+# ============================================
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Disallow: /admin-hub
+Disallow: /api/
+Crawl-delay: 5
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin-hub
+Disallow: /api/
+Crawl-delay: 10
+
+# ChatGPT / OpenAI (GPTBot)
+User-agent: GPTBot
+Allow: /
+Disallow: /admin-hub
+Disallow: /api/
+Disallow: /private/
+
+# Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin-hub
+Disallow: /api/
+
+# Common AI crawlers
+User-agent: CCBot
+Allow: /
+Crawl-delay: 15
+
+User-agent: Anthropic-AI
+Allow: /
+Crawl-delay: 15
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin-hub
+Disallow: /api/
+Crawl-delay: 10
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 10
+
+# Yandex
+User-agent: Yandex
+Disallow: /admin-hub
+Disallow: /api/
+Crawl-delay: 15
+
+# Baidu
+User-agent: Baiduspider
+Disallow: /admin-hub
+Disallow: /api/
+Crawl-delay: 20
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 10
+
+# Ahrefs (SEO crawler)
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 15
+
+# Semrush
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 15
+
+# Common bad bots - disallow
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
