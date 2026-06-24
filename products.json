@@ -1,0 +1,332 @@
+{
+  "categories": [
+    {"id": "generate", "title": "Generate", "tagline": "Start from zero. Prompt it. Create it."},
+    {"id": "knowledge", "title": "Knowledge & Workflows", "tagline": "Learn the process. Master the craft."},
+    {"id": "flip", "title": "Flip / Process", "tagline": "Take raw and make it shine."},
+    {"id": "finish", "title": "Finish & Release", "tagline": "Make it sound professional & go live."},
+    {"id": "membership", "title": "Membership", "tagline": "Unlock tools, packs, and VIP drops."}
+  ],
+  "products": [
+    {
+      "id": "prompt-pack-vol1",
+      "category": "generate",
+      "title": "Ultimate Prompt Pack Vol.1",
+      "priceCents": 2900,
+      "priceTag": "Pro Pack",
+      "image": "https://placehold.co/400x240/171a22/9ad1ff?text=Prompt+Pack",
+      "tags": ["TXT/PDF", "Genres", "Artist-feel"],
+      "formats": ["TXT", "PDF", "ZIP"],
+      "bullets": [
+        "200+ genre and artist-feel prompt recipes",
+        "Weighted macros + multi-step systems",
+        "Resell-friendly license add-on available"
+      ],
+      "badge": "Most Popular",
+      "delivery": "instant"
+    },
+    {
+      "id": "workflow-mastery-kit",
+      "category": "knowledge",
+      "title": "Music Creation Workflow Mastery",
+      "priceCents": 4900,
+      "priceTag": "Knowledge Pack",
+      "image": "https://placehold.co/400x240/171a22/a8ff9a?text=Workflow+Mastery",
+      "tags": ["PDF", "Templates", "Checklists"],
+      "formats": ["PDF", "DOCX", "TXT"],
+      "bullets": [
+        "Complete A-Z creation workflow guides",
+        "Artist workflow templates & checklists", 
+        "Time management & creative scheduling"
+      ],
+      "badge": "New",
+      "delivery": "instant"
+    },
+    {
+      "id": "prompt-engineering-master-pack",
+      "category": "knowledge", 
+      "title": "AI Prompt Engineering for Musicians",
+      "priceCents": 3900,
+      "priceTag": "Kit/Pack",
+      "image": "https://placehold.co/400x240/171a22/ff9adc?text=Prompt+Mastery",
+      "tags": ["PDF", "Examples", "Advanced"],
+      "formats": ["PDF", "TXT", "ZIP"],
+      "bullets": [
+        "Advanced prompt engineering techniques",
+        "50+ working examples for music AI tools",
+        "Iterative refinement strategies"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "producer-business-toolkit",
+      "category": "knowledge",
+      "title": "Producer Business & Marketing Toolkit",
+      "priceCents": 5900,
+      "priceTag": "Business Pack",
+      "image": "https://placehold.co/400x240/171a22/9afff0?text=Business+Kit",
+      "tags": ["PDF", "Templates", "Legal"],
+      "formats": ["PDF", "DOCX", "XLS"],
+      "bullets": [
+        "Contract templates & pricing guides",
+        "Social media & streaming strategies",
+        "Revenue stream optimization"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "creative-process-blueprint",
+      "category": "knowledge",
+      "title": "Creative Process Blueprint & Systems",
+      "priceCents": 2900,
+      "priceTag": "Process Pack",
+      "image": "https://placehold.co/400x240/171a22/ffb39a?text=Creative+Process",
+      "tags": ["PDF", "Worksheets", "Methods"],
+      "formats": ["PDF", "TXT"],
+      "bullets": [
+        "Structured creative ideation methods",
+        "Beat-making decision trees",
+        "Inspiration capture & organization"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "sample-clearance-guide",
+      "category": "knowledge",
+      "title": "Sample Clearance & Copyright Guide",
+      "priceCents": 1900,
+      "priceTag": "Legal Guide",
+      "image": "https://placehold.co/400x240/171a22/9affe1?text=Legal+Guide",
+      "tags": ["PDF", "Legal", "Samples"],
+      "formats": ["PDF"],
+      "bullets": [
+        "Sample clearance process walkthrough",
+        "Copyright basics for producers",
+        "Legal template letters & forms"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "streaming-optimization-kit",
+      "category": "knowledge",
+      "title": "Streaming Platform Optimization Kit",
+      "priceCents": 2400,
+      "priceTag": "Marketing Kit",
+      "image": "https://placehold.co/400x240/171a22/ffa89a?text=Streaming+Kit",
+      "tags": ["PDF", "Playlist", "Growth"],
+      "formats": ["PDF", "XLS"],
+      "bullets": [
+        "Spotify/Apple Music algorithm guides",
+        "Playlist pitching templates & contacts",
+        "Release timing & metadata optimization"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "beatstore-player-basic",
+      "category": "membership",
+      "title": "BeatStore Player — Basic",
+      "priceCents": 1900,
+      "priceTag": "Monthly",
+      "image": "https://placehold.co/400x240/171a22/00aaff?text=BeatStore+Basic",
+      "tags": ["Player", "Basic", "25 Tracks"],
+      "formats": ["Web Player", "Analytics"],
+      "bullets": [
+        "Embeddable beat player for your site",
+        "25 track uploads per month",
+        "Basic sales analytics & tracking",
+        "Stripe payment integration setup"
+      ],
+      "badge": "Coming Soon",
+      "delivery": "subscription",
+      "priceId": "price_REPLACE_BEATSTORE_BASIC"
+    },
+    {
+      "id": "beatstore-player-pro",
+      "category": "membership", 
+      "title": "BeatStore Player — Pro",
+      "priceCents": 3900,
+      "priceTag": "Monthly",
+      "image": "https://placehold.co/400x240/171a22/00ddff?text=BeatStore+Pro",
+      "tags": ["Player", "MPC Designer", "100 Tracks"],
+      "formats": ["Web Player", "MPC Tools", "Analytics"],
+      "bullets": [
+        "Everything in Basic + MPC pattern designer",
+        "100 track uploads + stems/hooks/kits",
+        "Advanced analytics + play tracking",
+        "Auto-metadata & dupe checker tools"
+      ],
+      "badge": "Most Popular",
+      "delivery": "subscription",
+      "priceId": "price_REPLACE_BEATSTORE_PRO"
+    },
+    {
+      "id": "beatstore-player-vip",
+      "category": "membership",
+      "title": "BeatStore Player — VIP", 
+      "priceCents": 7900,
+      "priceTag": "Monthly",
+      "image": "https://placehold.co/400x240/171a22/ff5fa8?text=BeatStore+VIP",
+      "tags": ["Unlimited", "Sound Library", "White-Label"],
+      "formats": ["Full Platform", "Sound Library", "Priority"],
+      "bullets": [
+        "Unlimited uploads + TheBeatMob sound library",
+        "White-label customization options",
+        "Bulk producer tagger & organizer tools",
+        "Priority support + setup assistance"
+      ],
+      "badge": "Premium",
+      "delivery": "subscription", 
+      "priceId": "price_REPLACE_BEATSTORE_VIP"
+    },
+    {
+      "id": "hook-vault-vol1",
+      "category": "generate",
+      "title": "Hook Vault Vol.1 — 50 AI Hooks",
+      "priceCents": 2900,
+      "priceTag": "Pro Pack",
+      "image": "https://placehold.co/400x240/171a22/ffc89a?text=Hook+Vault",
+      "tags": ["WAV", "MP3", "Keys/BPM"],
+      "formats": ["WAV", "MP3", "TXT (metadata)"],
+      "bullets": [
+        "50 AI-generated hooks (wet & dry)",
+        "Key & BPM metadata for each",
+        "Stem-ready WAV + MP3"
+      ],
+      "badge": "New",
+      "delivery": "instant"
+    },
+    {
+      "id": "one-shot-kit-808-lab",
+      "category": "generate",
+      "title": "808 Lab — Drum & One‑Shots",
+      "priceCents": 1900,
+      "priceTag": "Bundle Eligible",
+      "image": "https://placehold.co/400x240/171a22/b2ff9a?text=808+Lab",
+      "tags": ["WAV", "One‑Shots", "MIDI"],
+      "formats": ["WAV", "MIDI"],
+      "bullets": [
+        "120 one-shots (kicks, snares, hats, perks)",
+        "20 MIDI starter grooves",
+        "Sampler-ready tagging"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "stemsplit-credits-100",
+      "category": "flip",
+      "title": "StemSplit Credits — 100",
+      "priceCents": 1500,
+      "priceTag": "Credit Pack",
+      "image": "https://placehold.co/400x240/171a22/9affea?text=StemSplit+Credits",
+      "tags": ["2/4/5 stems", "Cloud"],
+      "formats": ["Credits"],
+      "bullets": [
+        "Use on 2/4/5 stem jobs",
+        "Priority queue access",
+        "Email notifications (coming)"
+      ],
+      "badge": "Deal",
+      "delivery": "instant",
+      "priceId": "price_REPLACE_ME_100"
+    },
+    {
+      "id": "screwai-presets-vol1",
+      "category": "flip",
+      "title": "ScrewAI Presets & FX Chains",
+      "priceCents": 2400,
+      "priceTag": "Pro Pack",
+      "image": "https://placehold.co/400x240/171a22/dc9aff?text=ScrewAI+Presets",
+      "tags": ["FX Chains", "HALF/SLOW", "432Hz"],
+      "formats": ["Preset", "PDF Guide"],
+      "bullets": [
+        "15 studio-grade FX chains",
+        "Half-time, tape, 432Hz modes",
+        "Cross-DAW tips"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "retune432-tool",
+      "category": "flip",
+      "title": "reTUNE432 — Web Tool",
+      "priceCents": 0,
+      "priceTag": "Free (Beta)",
+      "image": "https://placehold.co/400x240/171a22/9ae1ff?text=reTUNE432",
+      "tags": ["Web Tool"],
+      "formats": ["Web"],
+      "bullets": [
+        "Retune audio to 432 Hz",
+        "Batch mode (Pro soon)",
+        "Drag & drop"
+      ],
+      "badge": "Beta",
+      "delivery": "web",
+      "toolHref": "#tools"
+    },
+    {
+      "id": "mastering-chain-vol1",
+      "category": "finish",
+      "title": "Mastering Chains — Loud & Clean",
+      "priceCents": 3900,
+      "priceTag": "Pro Pack",
+      "image": "https://placehold.co/400x240/171a22/ff9ac0?text=Mastering+Chains",
+      "tags": ["Presets", "LUFS"],
+      "formats": ["Preset", "PDF"],
+      "bullets": [
+        "5 mastering templates (EDM/HipHop/Trap/Pop/Alt)",
+        "Target LUFS + streaming specs",
+        "Clip-safe"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "release-kit-vol1",
+      "category": "finish",
+      "title": "Release Kit — Cover Art + Metadata",
+      "priceCents": 2900,
+      "priceTag": "Bundle Eligible",
+      "image": "https://placehold.co/400x240/171a22/ffd59a?text=Release+Kit",
+      "tags": ["PSD/PNG", "Templates", "ISRC/UPC"],
+      "formats": ["PSD", "PNG", "TXT"],
+      "bullets": [
+        "Auto-ready covers (social sizes)",
+        "Metadata cheat sheet (ISRC/UPC/credits)",
+        "Print + retina"
+      ],
+      "delivery": "instant"
+    },
+    {
+      "id": "vip-membership",
+      "category": "membership",
+      "title": "VIP Tier — Monthly",
+      "priceCents": 990,
+      "priceTag": "Subscription",
+      "image": "https://placehold.co/400x240/171a22/bbff9a?text=VIP+Membership",
+      "tags": ["VIP", "Drops", "Discord"],
+      "formats": ["Subscription"],
+      "bullets": [
+        "All Pro packs + monthly drops",
+        "Priority support & requests",
+        "Tool credits included"
+      ],
+      "delivery": "subscription",
+      "priceId": "price_REPLACE_ME_VIP"
+    },
+    {
+      "id": "custom-hook-service",
+      "category": "finish",
+      "title": "Custom Hook / Topline (24–48h)",
+      "priceCents": 14900,
+      "priceTag": "Service",
+      "image": "https://placehold.co/400x240/171a22/9affc5?text=Custom+Hook",
+      "tags": ["Service", "24–48h"],
+      "formats": ["Service"],
+      "bullets": [
+        "One revision included",
+        "Rough master, stems provided",
+        "Rush add-on available"
+      ],
+      "delivery": "service"
+    }
+  ]
+}
