@@ -17,22 +17,27 @@ const seoRoutes = SEO_PAGES.map((page) => ({
   element: <SeoTemplate config={page} />,
 }))
 
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      { index: true, element: <HubPage /> },
-      { path: 'liminal', element: <LiminalPage /> },
-      { path: 'screwai', element: <ScrewAIPage /> },
-      { path: 'nodaw', element: <NoDAWPage /> },
-      { path: 'convertit', element: <ConvertIT /> },
-      { path: 'timit', element: <TrimIT /> },
-      { path: 'fxit', element: <FxIT /> },
-      { path: 'testit', element: <TestIT /> },
-      { path: 'ico', element: <ImageToICO /> },
-      { path: '*', element: <Navigate to="/" replace /> },
-    ],
-  },
-  ...seoRoutes,
-])
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        { index: true, element: <HubPage /> },
+        { path: 'liminal', element: <LiminalPage /> },
+        { path: 'screwai', element: <ScrewAIPage /> },
+        { path: 'nodaw', element: <NoDAWPage /> },
+        { path: 'convertit', element: <ConvertIT /> },
+        { path: 'timit', element: <TrimIT /> },
+        { path: 'fxit', element: <FxIT /> },
+        { path: 'testit', element: <TestIT /> },
+        { path: 'ico', element: <ImageToICO /> },
+        { path: '*', element: <Navigate to="/" replace /> },
+      ],
+    },
+    ...seoRoutes,
+  ],
+  { basename },
+)
