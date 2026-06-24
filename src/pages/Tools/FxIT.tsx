@@ -7,7 +7,7 @@ import { bus } from '../../engines/bus'
 import SkeuomorphicKnob from '../../components/shared/SkeuomorphicKnob'
 
 const CATEGORY_COLORS: Record<string, string> = { Dynamics: '#22d3ee', Filter: '#d4af37', Time: '#8b5cf6', Space: '#f43f5e', Modulation: '#a78bfa', Distortion: '#fbbf24', Utility: '#71717a' }
-const CATEGORY_ICONS: Record<string, React.ElementType> = { Dynamics: Volume2, Filter: Sliders, Time: ChevronRight, Space: Sparkles, Modulation: AudioWaveform, Distortion: Power, Utility: Sparkles }
+const CATEGORY_ICONS: Record<string, React.ComponentType<{ className?: string; size?: number }>> = { Dynamics: Volume2, Filter: Sliders, Time: ChevronRight, Space: Sparkles, Modulation: AudioWaveform, Distortion: Power, Utility: Sparkles }
 
 const WavePreview = ({ wave, duration, position, isPlaying }: { wave: { min: number; max: number }[]; duration: number; position: number; isPlaying: boolean }) => {
   const ref = useRef<HTMLCanvasElement>(null)

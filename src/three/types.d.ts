@@ -1,9 +1,18 @@
-import { ThreeElements } from '@react-three/fiber'
-
+// Three.js JSX elements — only what we use
 declare global {
-  namespace React {
-    namespace JSX {
-      interface IntrinsicElements extends ThreeElements {}
+  namespace JSX {
+    interface IntrinsicElements {
+      mesh: any
+      points: any
+      pointsMaterial: any
+      lineBasicMaterial: any
+      group: any
+      primitive: any
+      color: any
+      ambientLight: any
+      pointLight: any
+      sprite: any
+      spriteMaterial: any
     }
   }
 }

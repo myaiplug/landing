@@ -4,7 +4,7 @@ import { Repeat2, Wand2, Scissors, AudioWaveform, Image, Music4 } from 'lucide-r
 
 interface FreeTool {
   id: string
-  icon: React.ElementType
+  icon: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>
   name: string
   desc: string
   badge: string

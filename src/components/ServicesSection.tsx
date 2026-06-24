@@ -4,7 +4,7 @@ import { Layers, Clock, Star, ExternalLink } from 'lucide-react'
 
 interface Service {
   id: string
-  icon: React.ElementType
+  icon: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>
   name: string
   tagline: string
   price: string

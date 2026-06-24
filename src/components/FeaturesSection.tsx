@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { HardDrive, CreditCard, Infinity, Monitor } from 'lucide-react'
 
 interface Feature {
-  icon: React.ElementType
+  icon: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>
   title: string
   desc: string
   color: string
