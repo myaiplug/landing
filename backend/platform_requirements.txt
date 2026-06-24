@@ -13,7 +13,7 @@ psycopg2-binary>=2.9.0  # For PostgreSQL in production
 
 # Authentication & Security
 python-jose[cryptography]>=3.3.0
-python-multipart>=0.0.6
+python-multipart>=0.0.31
 bcrypt>=4.0.0
 passlib>=1.7.4
 
@@ -26,10 +26,10 @@ python-redis>=4.6.0
 
 # HTTP Client
 httpx>=0.25.0
-requests>=2.31.0
+requests>=2.33.0
 
 # File handling
-python-multipart>=0.0.6
+python-multipart>=0.0.31
 
 # Email validation
 email-validator>=2.0.0
